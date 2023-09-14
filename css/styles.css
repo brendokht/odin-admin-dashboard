@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
     display: grid;
-    grid-template-columns: 2fr 5fr;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    grid-template-columns: 2fr 8fr;
 }
 
 #sidebar {
@@ -44,8 +44,69 @@ img.svg {
 #settings>div>a {
     display: flex;
     align-items: center;
-    gap: 20%;
+    gap: 10%;
     margin: 3% 10%;
     text-decoration: none;
     color: white;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 1% 2%;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+
+#search-bar {
+    width: 75%;
+    height: 35%;
+    border-radius: 50px;
+    background-color: lightgray;
+}
+
+#profile-options {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5%;
+}
+
+#welcome {
+    display: flex;
+    align-items: center;
+}
+
+#welcome>div {
+    padding: 0 1%;
+}
+
+.profile-picture {
+    width: 48px;
+    height: 48px;
+}
+
+#post-options {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10%;
+}
+
+button {
+    border: none;
+    border-radius: 25px;
+    padding: 2% 8%;
+    font-size: 16px;
+    background-color: firebrick;
+    color: white;
+}
+
+#main {
+    background-color: lightgray;
 }
